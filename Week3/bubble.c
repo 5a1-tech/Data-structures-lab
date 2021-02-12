@@ -9,6 +9,8 @@ void bubble_sort(int a[100],int n)
        if (a[j]>a[j+1])
        {  
           int t = a[j];
+          a[j] = a[j+1];
+          a[j+1] = t;
        }
     }
   }
